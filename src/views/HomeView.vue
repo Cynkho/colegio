@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import TodoItem from '@/components/TodoItem.vue'
 
 // give each todo a unique id
 let id = 0
@@ -29,9 +30,11 @@ function removeTodo(todoToRemove) {
     <button>Add Todo</button>
   </form>
   <ul>
-    <li v-for="todo in todos" :key="todo.id">
-      {{ todo.text }}
-      <button @click="removeTodo(todo)">X</button>
-    </li>
+    <TodoItem
+      v-for="todo in todos"
+      :key="todo.id"
+      :text="todo.text"
+      @delete="removeTodo(todo)"
+    />
   </ul>
 </template>
