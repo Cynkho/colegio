@@ -1,0 +1,80 @@
+{
+    "alumnos": {
+        "[DNI]": {
+            "nombre": "",
+            "asignaturas": [
+                {
+                    "nombre_asignatura": "",
+                    "nota_media": 0.0,
+                    "examenes": [
+                        {
+                            "fecha": "",
+                            "nota": 0
+                        }
+                    ]
+                }
+            ],
+            "nota_media": 0.0
+        },
+        "718923": {
+            "nombre": "Roberto Silvano",
+            "asignaturas": [
+                {
+                    "nombre_asignatura": "Matem\u00e1ticas b\u00e1sicas",
+                    "nota_media": 9.0,
+                    "examenes": [
+                        {
+                            "fecha": "2021-08-07",
+                            "nota": "9"
+                        },
+                        {
+                            "fecha": "2021-05-03",
+                            "nota": "9"
+                        }
+                    ]
+                },
+                {
+                    "nombre_asignatura": "Matem\u00e1ticas dif\u00edciles",
+                    "nota_media": 9.0,
+                    "examenes": [
+                        {
+                            "fecha": "2021-08-07",
+                            "nota": "9"
+                        }
+                    ]
+                },
+                {
+                    "nombre_asignatura": "Lengua y literatura",
+                    "nota_media": 4.5,
+                    "examenes": [
+                        {
+                            "fecha": "2021-08-03",
+                            "nota": "4.5"
+                        }
+                    ]
+                }
+            ],
+            "nota_media": 7.875
+        },
+        "738373": {
+            "nombre": "Gregorio Gonz\u00e1lez",
+            "asignaturas": [
+                {
+                    "nombre_asignatura": "Educaci\u00f3n F\u00edsica",
+                    "examenes": [
+                        {
+                            "fecha": "2008-05-02",
+                            "nota": 5
+                        }
+                    ],
+                    "nota_media": 5.0
+                }
+            ],
+            "nota_media": 5.0
+        }
+    },
+    "nota_media": 4.291666666666667,
+    "mejor_alumno": [
+        "718923"
+    ]
+}

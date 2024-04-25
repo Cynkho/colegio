@@ -26,12 +26,37 @@ function removeTodo(todoToRemove) {
 <template>
   <form @submit.prevent="addTodo">
     <input v-model="newTodo" required placeholder="new todo" />
-    <button>Add Todo</button>
+    <button class="add-todo">Add Todo</button>
   </form>
   <ul>
     <li v-for="todo in todos" :key="todo.id">
       {{ todo.text }}
-      <button @click="removeTodo(todo)">X</button>
+      <button class="remove-todo" @click="removeTodo(todo)">x</button>
     </li>
   </ul>
 </template>
+
+<style>
+button {
+  background-color: #41b883;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+.add-todo {
+  padding: 3px 6px;
+}
+
+.remove-todo {
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 200px;
+}
+</style>
